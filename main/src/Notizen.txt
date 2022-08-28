@@ -1,0 +1,11 @@
+
+
+ToDoList:
+    - ToDoList erstellen lol
+
+
+
+Nützliche Links:
+    - GUI
+        - https://openjfx.io/openjfx-docs/#install-javafx
+        - https://www.youtube.com/watch?v=ZfaPMLdgJxQ&t=9s&ab_channel=BoostMyTool
