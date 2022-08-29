@@ -1,7 +1,33 @@
 
 
-ToDoList:
-    - ToDoList erstellen lol
+Dringende To-do-Liste:      // (für wichtige todos, z.B. Bugs)
+    -
+
+
+Aktuelle To-do-Liste:       // (für anstehende todos)
+    - Tests für die in domainLogic erstellten Klassen erstellen
+    - In domainLogic die Klassen erstellen und dort die To-dos abarbeiten
+    - Übergangslösung für GUI implementieren
+    - Übergangslösung für Datenbank implementieren
+
+
+Basics To-Do-List:          // (für groben Überblick)
+    - Test Suite
+        - GUI Tests?
+        - Datenbank Tests?
+    - GUI
+        - Übergangslösung:
+            - grobe beta views anfertigen
+        - Views designen
+        - View-Model-Controller Modell umsetzen
+            - UML anfertigen?
+    - Database
+        - Übergangslösung:
+            - .java Datei, in der die Zutaten, Rezepte, etc hardcoded erstellt werden
+                - Negativpunkt: Keine z.B. Rezepte zur Laufzeit erstellbar, die automatisch abgespeichert werden
+        - MySQL (?) aufsetzen
+        - Schnittstelle zur Datenbank programmieren
+
 
 
 
