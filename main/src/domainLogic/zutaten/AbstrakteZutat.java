@@ -1,6 +1,6 @@
 package domainLogic.zutaten;
 
-import domainLogic.Naerhwerte;
+import domainLogic.Naehrwerte;
 
 // TODO: 29.08.2022 Klasse kommentieren
 // TODO: 29.08.2022 Attribute kommentieren
@@ -13,7 +13,7 @@ public abstract class AbstrakteZutat {
     public int mengeZahl;
     protected String mengeTyp;
     protected int einheitsgroesse;
-    protected Naerhwerte naerhwerte;
+    protected Naehrwerte naehrwerte;
 
     @Override
     public String toString() {
@@ -26,11 +26,11 @@ public abstract class AbstrakteZutat {
         return "";
     }
 
-    public Naerhwerte getNaehrwerte() {
+    public Naehrwerte getNaehrwerte() {
         // TODO: 29.08.2022 Implementierung
         return null;
     }
 
-    public abstract Zutat createZutat();
+    public abstract Zutat createZutat() throws NoSuchMethodException;
 
 }

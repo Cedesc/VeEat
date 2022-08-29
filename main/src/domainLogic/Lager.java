@@ -4,7 +4,10 @@ import domainLogic.zutaten.Zutat;
 
 import java.util.List;
 
-// Lager ist ein Singleton, da genau eins benötigt wird.
+
+/**
+ * Lager ist ein Singleton, da genau eins benötigt wird.
+ */
 public class Lager {
 
     // Eine mutable list der Zutaten im Lager. Mutable daher, da oft Zutaten hinzugefügt oder entfernt werden müssen.

@@ -1,9 +1,12 @@
 package domainLogic;
 
-// TODO: 29.08.2022 Klasse kommentieren
-// TODO: 29.08.2022 Attribute kommentieren
-// TODO: 29.08.2022 Methoden kommentieren
+/**
+ * Statt einfachem String für die Anleitung, mit dieser abgekapselten Klasse Möglichkeit offen halten z.B.
+ * Schritt-für-Schritt Anleitungen zu nutzen.
+ */
 public class Anleitung {
 
-    // TODO: 29.08.2022 Aus UML Diagramm übernehmen
+    // Kompletter Text der Anleitung.
+    public String text;
+
 }

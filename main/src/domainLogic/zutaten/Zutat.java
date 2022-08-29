@@ -3,7 +3,11 @@ package domainLogic.zutaten;
 // TODO: 29.08.2022 Klasse kommentieren
 // TODO: 29.08.2022 Attribute kommentieren
 // TODO: 29.08.2022 Methoden kommentieren
-public class Zutat {
+public class Zutat extends AbstrakteZutat {
 
-    // TODO: 29.08.2022 Aus UML-Diagramm übernehmen
+    @Override
+    public Zutat createZutat() throws NoSuchMethodException {
+        throw new NoSuchMethodException();
+    }
+
 }
