@@ -6,7 +6,13 @@ Dringende To-do-Liste:      // (für wichtige todos, z.B. Bugs)
 
 Aktuelle To-do-Liste:       // (für anstehende todos)
     - Tests für die in domainLogic erstellten Klassen erstellen
-    - In domainLogic die Klassen erstellen und dort die To-dos abarbeiten
+    - In UML Sachen anpassen
+        - haltbarkeit in mindesthaltbarkeitsdatum umbenennen und als Date statt int
+        - naehrwerte in naehrwerteProEinheitsgroesse umbennen
+        - zubereitungszeitGesamt und zubereitungszeitArbeit in int umwandeln
+        - zutaten und optionaleZutaten von Rezept sollten auf Zutat statt AbstrakteZutat zeigen
+        - createZutat in AbstrakteZutat auf protected setzen
+        - createZutat in Zutat schreiben und auf protected setzen
     - Übergangslösung für GUI implementieren
     - Übergangslösung für Datenbank implementieren
 
