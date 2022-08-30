@@ -1,5 +1,9 @@
 package domainLogic.enums;
 
+
+/**
+ * Küchengegenstände, die ggf fürs Kochen benötigt werden.
+ */
 public enum Gegenstand {
     KOCHTOPF,
     PFANNE,

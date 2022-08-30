@@ -9,26 +9,53 @@ import java.util.Date;
 
 public class Rezept {
 
-    // Einzigartige ID je Rezept
+    /**
+     * Einzigartige ID je Rezept
+     */
     public int id;
+
     public String name;
-    // Datum, an dem das Rezept in die Datenbank aufgenommen wurde.
+
+    /**
+     * Datum, an dem das Rezept in die Datenbank aufgenommen wurde.
+     */
     public Date hinzugefuegtDatum;
-    // Zubereitungszeit in Minuten
+
+    /**
+     * Zubereitungszeit in Minuten
+     */
     public int zubereitungszeitGesamt;
-    // Zubereitungszeit in Minuten ohne z.B. im "Ofen backen lassen".
+
+    /**
+     * Zubereitungszeit in Minuten ohne z.B. im "Ofen backen lassen".
+     */
     public int zubereitungszeitArbeit;
 
-    // Benötigte Zutaten
+
+    /**
+     * Benötigte Zutaten
+     */
     public Zutat[] zutaten;
-    // Weitere empfohlene Zutaten
+
+    /**
+     * Weitere empfohlene Zutaten
+     */
     public Zutat[] optionaleZutaten;
-    // Naehrwerte des Gerichts, im Zweifel die Naehrwerte der Zutaten summiert
+
+    /**
+     * Naehrwerte des Gerichts, im Zweifel die Naehrwerte der Zutaten summiert
+     */
     public Naehrwerte naehrwerte;
+
     public Anleitung anleitung;
-    // Benötigte Utensilien wie z.B. Ofen oder Stabmixer
+
+    /**
+     * Benötigte Utensilien wie z.B. Ofen oder Stabmixer
+     */
     public Gegenstand[] noetigeUtensilien;
+
     public Tag[] tags;
+
 
     @Override
     public String toString() {
