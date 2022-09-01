@@ -1,6 +1,6 @@
-package domainLogic.zutaten;
+package model.zutaten;
 
-import domainLogic.Naehrwerte;
+import model.Naehrwerte;
 
 import java.util.Date;
 

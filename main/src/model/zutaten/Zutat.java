@@ -1,4 +1,4 @@
-package domainLogic.zutaten;
+package model.zutaten;
 
 import java.util.Date;
 

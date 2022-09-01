@@ -1,4 +1,4 @@
-package domainLogic;
+package model;
 
 
 /**

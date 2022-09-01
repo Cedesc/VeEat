@@ -1,8 +1,8 @@
-package domainLogic;
+package model;
 
-import domainLogic.enums.Gegenstand;
-import domainLogic.enums.Tag;
-import domainLogic.zutaten.Zutat;
+import model.enums.Gegenstand;
+import model.enums.Tag;
+import model.zutaten.Zutat;
 
 import java.util.Date;
 

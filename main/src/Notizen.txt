@@ -5,7 +5,7 @@ Dringende To-do-Liste:      // (für wichtige todos, z.B. Bugs)
 
 
 Aktuelle To-do-Liste:       // (für anstehende todos)
-    - Tests für die in domainLogic erstellten Klassen erstellen
+    - Tests für die in model erstellten Klassen erstellen
     - Übergangslösung für GUI implementieren
     - Übergangslösung für Datenbank implementieren
 

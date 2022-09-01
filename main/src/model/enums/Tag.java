@@ -1,4 +1,4 @@
-package domainLogic.enums;
+package model.enums;
 
 
 /**

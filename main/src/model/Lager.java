@@ -1,6 +1,6 @@
-package domainLogic;
+package model;
 
-import domainLogic.zutaten.Zutat;
+import model.zutaten.Zutat;
 
 import java.util.List;
 
