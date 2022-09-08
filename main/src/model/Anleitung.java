@@ -12,4 +12,19 @@ public class Anleitung {
      */
     public String text;
 
+    /**
+     * Konstruktor
+     * @param text Kompletter Text der Anleitung
+     */
+    public Anleitung(String text) {
+        this.text = text;
+    }
+
+    /**
+     * @return Gesamter {@link #text}
+     */
+    @Override
+    public String toString() {
+        return "Anleitung\n" + this.text;
+    }
 }

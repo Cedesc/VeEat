@@ -1,11 +1,35 @@
 package model.zutaten;
 
+import model.Naehrwerte;
+
 import java.util.Date;
+
 
 /**
  * Ein Prototyp von den Zutaten, einzig dafür da um als Vorlage für die tatsächlichen Zutaten zu dienen.
  */
 public class ZutatPrototyp extends AbstrakteZutat {
+
+    /**
+     * Konstruktor
+     * @param typID Einzigartige ID je Typ der Zutat
+     * @param name Name der Zutat
+     * @param mindesthaltbarkeitsdatum Mindesthaltbarkeitsdatum der Zutat
+     * @param mengeZahl Angabe wie groß die Menge ist, allerdings nur die "Zahl".
+     * @param mengeTyp Angabe was es für eine Menge ist, allerdings nur die "Einheit"
+     * @param einheitsgroesse Festgelegte Standardgröße der Zutat
+     * @param naehrwerteProEinheitsgroesse Nährwerte der Zutat pro Einheitsgröße
+     */
+    public ZutatPrototyp(int typID, String name, Date mindesthaltbarkeitsdatum, int mengeZahl, String mengeTyp,
+                         int einheitsgroesse, Naehrwerte naehrwerteProEinheitsgroesse) {
+        this.typID = typID;
+        this.name = name;
+        this.mindesthaltbarkeitsdatum = mindesthaltbarkeitsdatum;
+        this.mengeZahl = mengeZahl;
+        this.mengeTyp = mengeTyp;
+        this.einheitsgroesse = einheitsgroesse;
+        this.naehrwerteProEinheitsgroesse = naehrwerteProEinheitsgroesse;
+    }
 
     /**
      * @param neuerName Neuer Name statt dem Standardnamen

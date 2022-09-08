@@ -29,17 +29,27 @@ public class Lager {
     /**
      * @return Singleton Instanz
      */
-    public static Lager getLager() {
+    public static Lager getInstance() {
         return INSTANZ;
     }
 
+
+    /**
+     * Fügt eine einzelne Zutat hinzu.
+     * @param zutat Zutat, die hinzugefügt werden soll
+     */
+    public void zutatHinzufuegen(Zutat zutat) {
+        this.vorhandeneZutaten.add(zutat);
+    }
 
     /**
      * Fügt neue Zutaten ans Ende der Liste vorhandeneZutaten an.
      * @param zutaten Zutaten, die hinzugefügt werden sollen
      */
     public void zutatenHinzufuegen(Zutat[] zutaten) {
-        // TODO: 29.08.2022 Implementierung
+        for (Zutat zutat : zutaten) {
+            this.zutatHinzufuegen(zutat);
+        }
     }
 
     /**
@@ -69,4 +79,9 @@ public class Lager {
         return null;
     }
 
+    @Override
+    public String toString() {
+        // TODO: 08.09.2022 Implementierung
+        return super.toString();
+    }
 }

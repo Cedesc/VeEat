@@ -57,6 +57,24 @@ public class Rezept {
     public Tag[] tags;
 
 
+    public Rezept(int id, String name, Date hinzugefuegtDatum, int zubereitungszeitGesamt,
+                  int zubereitungszeitArbeit, Zutat[] zutaten, Zutat[] optionaleZutaten,
+                  Naehrwerte naehrwerte, Anleitung anleitung, Gegenstand[] noetigeUtensilien,
+                  Tag[] tags) {
+        this.id = id;
+        this.name = name;
+        this.hinzugefuegtDatum = hinzugefuegtDatum;
+        this.zubereitungszeitGesamt = zubereitungszeitGesamt;
+        this.zubereitungszeitArbeit = zubereitungszeitArbeit;
+        this.zutaten = zutaten;
+        this.optionaleZutaten = optionaleZutaten;
+        this.naehrwerte = naehrwerte;
+        this.anleitung = anleitung;
+        this.noetigeUtensilien = noetigeUtensilien;
+        this.tags = tags;
+    }
+
+
     @Override
     public String toString() {
         // TODO: 30.08.2022 Implementierung
