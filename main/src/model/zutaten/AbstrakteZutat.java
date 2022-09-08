@@ -45,8 +45,15 @@ public abstract class AbstrakteZutat {
 
     @Override
     public String toString() {
-        // TODO: 29.08.2022 Implementierung
-        return "";
+        return "{" +
+                "typID=" + typID +
+                ", name='" + name + '\'' +
+                ", mindesthaltbarkeitsdatum=" + mindesthaltbarkeitsdatum +
+                ", mengeZahl=" + mengeZahl +
+                ", mengeTyp='" + mengeTyp + '\'' +
+                ", einheitsgroesse=" + einheitsgroesse +
+                ", naehrwerteProEinheitsgroesse=" + naehrwerteProEinheitsgroesse +
+                '}';
     }
 
     /**

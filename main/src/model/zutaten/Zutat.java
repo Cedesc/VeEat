@@ -21,7 +21,7 @@ public class Zutat extends AbstrakteZutat {
      * @param naehrwerteProEinheitsgroesse Nährwerte der Zutat pro Einheitsgröße
      */
     public Zutat(int typID, String name, Date mindesthaltbarkeitsdatum, int mengeZahl, String mengeTyp,
-                         int einheitsgroesse, Naehrwerte naehrwerteProEinheitsgroesse) {
+                 int einheitsgroesse, Naehrwerte naehrwerteProEinheitsgroesse) {
         this.typID = typID;
         this.name = name;
         this.mindesthaltbarkeitsdatum = mindesthaltbarkeitsdatum;
@@ -41,4 +41,8 @@ public class Zutat extends AbstrakteZutat {
         throw new NoSuchMethodException();
     }
 
+    @Override
+    public String toString() {
+        return "KonkreteZutat " + super.toString();
+    }
 }

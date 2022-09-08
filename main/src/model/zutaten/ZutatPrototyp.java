@@ -67,4 +67,8 @@ public class ZutatPrototyp extends AbstrakteZutat {
         return createZutat(name, mindesthaltbarkeitsdatum, mengeZahl);
     }
 
+    @Override
+    public String toString() {
+        return "Prototyp " + super.toString();
+    }
 }
