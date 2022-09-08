@@ -2,7 +2,9 @@ package model.zutaten;
 
 import model.Naehrwerte;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 
 
 /**
@@ -19,7 +21,7 @@ public abstract class AbstrakteZutat {
 
     public String name;
 
-    public Date mindesthaltbarkeitsdatum;
+    public LocalDate mindesthaltbarkeitsdatum;
 
     /**
      * Angabe wie groß die Menge ist, aber nur die "Zahl". Heißt bei "150 g" wäre die mengeZahl "150".
@@ -45,15 +47,14 @@ public abstract class AbstrakteZutat {
 
     @Override
     public String toString() {
-        return "{" +
-                "typID=" + typID +
-                ", name='" + name + '\'' +
-                ", mindesthaltbarkeitsdatum=" + mindesthaltbarkeitsdatum +
-                ", mengeZahl=" + mengeZahl +
-                ", mengeTyp='" + mengeTyp + '\'' +
-                ", einheitsgroesse=" + einheitsgroesse +
-                ", naehrwerteProEinheitsgroesse=" + naehrwerteProEinheitsgroesse +
-                '}';
+        return "\n    TypID = " + typID +
+                "\n    Name = " + name +
+                "\n    Mindesthaltbarkeitsdatum = " +
+                            mindesthaltbarkeitsdatum.format(DateTimeFormatter.ofPattern("dd.MM.yy")) +
+                "\n    Menge = " + getMenge() +
+                "\n    Einheitsgroesse = " + einheitsgroesse +
+                "\n    Naehrwerte pro Einheitsgroesse = " + naehrwerteProEinheitsgroesse.toString_short() +
+                "\n    Naehrwerte auf Menge gerechnet = " + getNaehrwerte().toString_short() + "\n";
     }
 
     /**
@@ -67,19 +68,17 @@ public abstract class AbstrakteZutat {
      * @return Menge der Zutat
      */
     public String getMenge() {
-        // TODO: 29.08.2022 Implementierung
-        return "";
+        return mengeZahl + " " + mengeTyp;
     }
 
     /**
      * @return Nährwerte der Zutat, mit Einbezug der Menge
      */
     public Naehrwerte getNaehrwerte() {
-        // TODO: 29.08.2022 Implementierung
-        return null;
+        return naehrwerteProEinheitsgroesse.aufMengeBerechnen(mengeZahl, einheitsgroesse);
     }
 
-    protected abstract Zutat createZutat(String neuerName, Date neueHaltbarkeit, int neueMengeZahl)
+    protected abstract Zutat createZutat(String neuerName, LocalDate neueHaltbarkeit, int neueMengeZahl)
             throws NoSuchMethodException;
 
 }

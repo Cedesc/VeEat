@@ -2,7 +2,7 @@ package model.zutaten;
 
 import model.Naehrwerte;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 
 /**
@@ -20,7 +20,7 @@ public class Zutat extends AbstrakteZutat {
      * @param einheitsgroesse Festgelegte Standardgröße der Zutat
      * @param naehrwerteProEinheitsgroesse Nährwerte der Zutat pro Einheitsgröße
      */
-    public Zutat(int typID, String name, Date mindesthaltbarkeitsdatum, int mengeZahl, String mengeTyp,
+    public Zutat(int typID, String name, LocalDate mindesthaltbarkeitsdatum, int mengeZahl, String mengeTyp,
                  int einheitsgroesse, Naehrwerte naehrwerteProEinheitsgroesse) {
         this.typID = typID;
         this.name = name;
@@ -37,12 +37,12 @@ public class Zutat extends AbstrakteZutat {
      * werden darf
      */
     @Override
-    protected Zutat createZutat(String neuerName, Date neueHaltbarkeit, int neueMengeZahl) throws NoSuchMethodException {
+    protected Zutat createZutat(String neuerName, LocalDate neueHaltbarkeit, int neueMengeZahl) throws NoSuchMethodException {
         throw new NoSuchMethodException();
     }
 
     @Override
     public String toString() {
-        return "KonkreteZutat " + super.toString();
+        return "KonkreteZutat" + super.toString();
     }
 }

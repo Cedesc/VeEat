@@ -110,6 +110,7 @@ public class Naehrwerte {
     }
 
     public void setBrennwert(double brennwert) {
+        // TODO: 08.09.2022 Bei ALLEN sets auf zwei Nachkommastellen begrenzen
         if (brennwert < 0) this.brennwert = -1.0;
         else this.brennwert = brennwert;
     }

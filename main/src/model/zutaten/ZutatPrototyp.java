@@ -2,7 +2,7 @@ package model.zutaten;
 
 import model.Naehrwerte;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 
 /**
@@ -20,7 +20,7 @@ public class ZutatPrototyp extends AbstrakteZutat {
      * @param einheitsgroesse Festgelegte Standardgröße der Zutat
      * @param naehrwerteProEinheitsgroesse Nährwerte der Zutat pro Einheitsgröße
      */
-    public ZutatPrototyp(int typID, String name, Date mindesthaltbarkeitsdatum, int mengeZahl, String mengeTyp,
+    public ZutatPrototyp(int typID, String name, LocalDate mindesthaltbarkeitsdatum, int mengeZahl, String mengeTyp,
                          int einheitsgroesse, Naehrwerte naehrwerteProEinheitsgroesse) {
         this.typID = typID;
         this.name = name;
@@ -38,26 +38,26 @@ public class ZutatPrototyp extends AbstrakteZutat {
      * @return Zutat, die vom Prototyp geklont wird
      */
     @Override
-    public Zutat createZutat(String neuerName, Date neueHaltbarkeit, int neueMengeZahl) {
+    public Zutat createZutat(String neuerName, LocalDate neueHaltbarkeit, int neueMengeZahl) {
         // TODO: 29.08.2022 Implementierung
         return null;
     }
 
     // Weitere Signaturen zur Imitation von optionalen Parametern. Geht nur solange jeder Typ der Parameter
     // unterschiedlich ist.
-    public Zutat createZutat(String neuerName, Date neueHaltbarkeit) {
+    public Zutat createZutat(String neuerName, LocalDate neueHaltbarkeit) {
         return createZutat(neuerName, neueHaltbarkeit, mengeZahl);
     }
     public Zutat createZutat(String neuerName, int neueMengeZahl) {
         return createZutat(neuerName, mindesthaltbarkeitsdatum, neueMengeZahl);
     }
-    public Zutat createZutat(Date neueHaltbarkeit, int neueMengeZahl) {
+    public Zutat createZutat(LocalDate neueHaltbarkeit, int neueMengeZahl) {
         return createZutat(name, neueHaltbarkeit, neueMengeZahl);
     }
     public Zutat createZutat(String neuerName) {
         return createZutat(neuerName, mindesthaltbarkeitsdatum, mengeZahl);
     }
-    public Zutat createZutat(Date neueHaltbarkeit) {
+    public Zutat createZutat(LocalDate neueHaltbarkeit) {
         return createZutat(name, neueHaltbarkeit, mengeZahl);
     }
     public Zutat createZutat(int neueMengeZahl) {
