@@ -16,7 +16,37 @@ class NaehrwerteTest {
     void tearDown() {
     }
 
+
     @Test
     void testToString() {
     }
+
+    @Test
+    void getBrennwert() {
+    }
+
+    @Test
+    void getFett() {
+    }
+
+    @Test
+    void getKohlenhydrate() {
+    }
+
+    @Test
+    void getZucker() {
+    }
+
+    @Test
+    void getBallaststoffe() {
+    }
+
+    @Test
+    void getEiweiss() {
+    }
+
+    @Test
+    void getSalz() {
+    }
+
 }
