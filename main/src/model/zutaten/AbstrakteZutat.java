@@ -4,7 +4,6 @@ import model.Naehrwerte;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
 
 
 /**
@@ -19,14 +18,14 @@ public abstract class AbstrakteZutat {
      */
     protected int typID;
 
-    public String name;
+    protected String name;
 
-    public LocalDate mindesthaltbarkeitsdatum;
+    protected LocalDate mindesthaltbarkeitsdatum;
 
     /**
      * Angabe wie groß die Menge ist, aber nur die "Zahl". Heißt bei "150 g" wäre die mengeZahl "150".
      */
-    public int mengeZahl;
+    protected int mengeZahl;
 
     /**
      * Angabe was es für eine Menge ist, aber nur die "Einheit". Heißt bei "150 g" wäre der mengeTyp "g".
@@ -55,6 +54,14 @@ public abstract class AbstrakteZutat {
                 "\n    Einheitsgroesse = " + einheitsgroesse +
                 "\n    Naehrwerte pro Einheitsgroesse = " + naehrwerteProEinheitsgroesse.toString_short() +
                 "\n    Naehrwerte auf Menge gerechnet = " + getNaehrwerte().toString_short() + "\n";
+    }
+
+    public int getMengeZahl() {
+        return mengeZahl;
+    }
+
+    public int getEinheitsgroesse() {
+        return einheitsgroesse;
     }
 
     /**
