@@ -8,6 +8,7 @@ Aktuelle To-do-Liste:       // (für anstehende todos)
     - Tests für die in model erstellten Klassen erstellen
     - Übergangslösung für GUI implementieren
     - Übergangslösung für Datenbank implementieren
+        - SQLite bietet sich an (siehe chatgpt)
 
 
 Basics To-Do-List:          // (für groben Überblick)
