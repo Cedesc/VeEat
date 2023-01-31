@@ -4,7 +4,7 @@ package model;
 import java.util.Objects;
 
 /**
- * Gibt die Naehrwerte für Rezepte oder Zutaten an.
+ * Gibt die Naehrwerte für Rezepte oder Zutaten an. Der Wert "-1" steht dabei für "Keine Angabe".
  */
 public class Naehrwerte {
 
