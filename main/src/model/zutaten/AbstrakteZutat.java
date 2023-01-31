@@ -56,10 +56,18 @@ public abstract class AbstrakteZutat {
                 "\n    Naehrwerte auf Menge gerechnet = " + getNaehrwerte().toString_short() + "\n";
     }
 
+    /**
+     * Simple getter.
+     * @return {@link #mengeZahl}
+     */
     public int getMengeZahl() {
         return mengeZahl;
     }
 
+    /**
+     * Simple getter.
+     * @return {@link #einheitsgroesse}
+     */
     public int getEinheitsgroesse() {
         return einheitsgroesse;
     }
