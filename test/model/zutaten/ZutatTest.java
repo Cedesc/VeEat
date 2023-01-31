@@ -67,10 +67,34 @@ class ZutatTest {
 
     @Test
     void getMenge() {
+        String expected_1 = "5 Stück";
+        String actual_1 = zutat1.getMenge();
+        assertEquals(expected_1, actual_1);
+
+        String expected_2 = "700 g";
+        String actual_2 = zutat2.getMenge();
+        assertEquals(expected_2, actual_2);
+
+        String expected_3 = "7 Zehen";
+        String actual_3 = zutat3.getMenge();
+        assertEquals(expected_3, actual_3);
     }
 
     @Test
     void getNaehrwerte() {
+        Naehrwerte expected_1 = new Naehrwerte(10, 9, 8, -1, 6, 5, 4);
+        expected_1 = expected_1.aufMengeBerechnen(zutat1.getMengeZahl(), zutat1.getEinheitsgroesse());
+        Naehrwerte actual_1 = zutat1.getNaehrwerte();
+        assertEquals(expected_1, actual_1);
+
+        Naehrwerte expected_2 = new Naehrwerte(3, -1, 9, 12, -1, 5, -1);
+        expected_2 = expected_2.aufMengeBerechnen(zutat2.getMengeZahl(), zutat2.getEinheitsgroesse());
+        Naehrwerte actual_2 = zutat2.getNaehrwerte();
+        assertEquals(expected_2, actual_2);
+
+        Naehrwerte expected_3 = new Naehrwerte();
+        Naehrwerte actual_3 = zutat3.getNaehrwerte();
+        assertEquals(expected_3, actual_3);
     }
 
     @Test
